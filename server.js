@@ -6,7 +6,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 
 const allowedOrigins = [
-  'https://mrpigbankers.onrender.com/api',
+  'https://mrpigbankers.onrender.com',
 ];
 
 app.use(cors({
