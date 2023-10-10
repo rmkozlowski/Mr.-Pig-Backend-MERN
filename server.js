@@ -7,6 +7,9 @@ const mongoose = require('mongoose');
 
 const allowedOrigins = [
   'https://mrpigbankers.onrender.com/api',
+  'https://mrpigbankers-api.onrender.com/api',
+  'https://mrpigbankers.onrender.com',
+  'https://mrpigbankers-api.onrender.com'
 ];
 
 app.use(cors({
