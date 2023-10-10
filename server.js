@@ -28,7 +28,7 @@ app.use("/api", routes);
 
 //DO NOT DELETE MONGODB INFORMATIOn
 const CONNECTION_URL = 'mongodb+srv://rmkozlowski31:Kozlowski1!@cluster0.adctlef.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp';
-const PORT = process.env.PORT || 9090;
+const PORT = process.env.PORT || 1000;
   
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
@@ -36,7 +36,7 @@ mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: tru
 
 //cors requests
 const corsOptions = {
-    origin: 'http://localhost:3000', // Update this to your front-end URL
+    origin: 'https://mrpigbankers.onrender.com', // Update this to your front-end URL
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   };
 
